@@ -1,0 +1,8 @@
+# SCsub
+
+Import('env')
+
+env.add_source_files(env.modules_sources, "*.cpp") # Add all cpp files to the build
+env.add_source_files(env.modules_sources, "mm_math/*.cpp")
+env.add_source_files(env.modules_sources, "debug_draw_3d/*.cpp")
+env.add_source_files(env.modules_sources, "animation_solver/*.cpp")
